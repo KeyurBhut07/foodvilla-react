@@ -1,0 +1,118 @@
+// Craete Element
+// const h1 = React.createElement("h1", { id : "tutle" , key : "h2"}, "Hello World!");
+
+// JSX => [BABEL] Convert JSX TO => React.createElement => HTML(DOM)
+
+/*
+ TWO type of React Component
+  1. Functional Component - NEW
+     - Functional Component is a nothing but a function😂😁
+     - It is JS Function
+     - Name of component start with capital letter  - Not Mendatory
+
+
+  2. ClassBase Component - OLD
+*/
+
+
+<!-- 
+1. virtual DOM
+   Respresenation of DOM is Known as Virtual DOM
+2. Reconsiluation
+   recun is a algorithm that react uses to diff(differ Algorithm) one tree to other and it determind what chanegs need to put in UI.
+-->
+
+
+React Using One-way Databinding.
+
+Every Component in react maintain a state.
+
+What is State?
+- Every time you want vairable to be in sync with the ui you need to use state vairable
+
+
+What is React Hooked?
+- Hooked is nothing it's just like a function😂😁
+- come some Functionality to create a local state vairable.
+- writen by faceBook Developer.
+
+
+What is useState() Hooked?
+- TO Create A state vriable.
+- return a array that Why we writen const [vairable] = useState()
+- ex. const [searchText, setSearchText] = useState("KB");
+  - searchText is a local vriable
+  - when we change our vairable value using a function that function get int useState(). so setSearchText is 
+    a function😂😁
+  - "KB" is initial value.
+  - return [vairable nm , function to update the vriable]
+
+
+
+Monolith Arcitectur
+- Everthing in one Project (UI,BACKEND,SERVICES) - (ALL IN ONE) - One Repo
+  ex. One App Like JOB BORAD App
+      - UI
+      - BACKEND API
+      - Notification Services
+      - Email Services
+
+
+MicroService Arcitectur
+- Everthing in Degferent Repo
+  ex - UI is Seprate
+     - BACKEND API is Seprate
+     - Notification Seprate
+     - Authentication Seprate
+     - Logs Seprate
+
+- Advantages : 
+  - Esay To Test
+  - Easit To maintain
+  - Sepration Of Councern (Every MicroService have they are OWN worked to do)
+
+
+
+- TWO type of routing
+  1. Client Side routing
+  2. Server Side routing
+  
+
+
+- Props Driling
+
+- Lifting The State UP
+
+-useContect()
+  - to manage the props drillng
+  - global access
+
+- Create Our Store
+=> Redux
+   - To manage the global variable in our Store
+   - Create A One Store and define a logical sepration it's known as 'slice'
+     = > Slice Means  
+      - define a data to a One big Continer 
+      - Slice is a poration of your store
+        - user Sclice
+        - Authentication slice
+        - cart slice
+        - theme slice
+
+   - suppose i have to modify my store directly can't do that , i use DISPACTH and ACTION
+ 
+   -  what is reducer?
+     - suppose we deisptach the action and call the reducer fuction that fuction is known as 'reducer' that  update the slice of the my redux store.  
+
+   - How to read the Store?
+     - 'selectore' also known as 'subscriber'
+     - if you read the store you have to call the selectore. that selectore give you info of store.
+
+
+13-Chapter
+=> React Testing Tools
+  - Unit Testing
+     - Test a Samall Component
+
+
+- Debouncing
